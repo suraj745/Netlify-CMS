@@ -1,3 +1,5 @@
+@import "./function";
+
 .nav_out {
   position: absolute;
   top: 0;
@@ -5,8 +7,14 @@
 }
 
 .nav_left {
-  & > img {
-    max-width: 12rem;
+  & > a {
+    & > img {
+      max-width: 12rem;
+
+      @include media("<576px") {
+        max-width: 9rem;
+      }
+    }
   }
 }
 

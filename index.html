@@ -78,7 +78,7 @@
         >
           <ul class="col intro_left">
             <li class="heading">
-              <h1 class="big_heading">Alok Ranjan Tiwari,</h1>
+              <h1 class="big_heading cursive_heading">Alok Ranjan Tiwari,</h1>
             </li>
             <li>
               <p class="paragraph">
@@ -108,7 +108,7 @@
             </li>
           </ul>
           <ul class="col-8 col-md-5 col-lg-4 col-xl-3 intro_right">
-            <img src="/public/images/Home/ranjan tiwari.png" alt="" />
+            <img src="/images/Home/ranjan tiwari.png" alt="" />
           </ul>
         </section>
       </section>
@@ -131,7 +131,7 @@
               </p>
             </li>
             <li>
-              <img src="/public/images/Home/mission.png" alt="" />
+              <img src="/images/Home/mission.png" alt="" />
             </li>
           </ul>
 
@@ -149,7 +149,7 @@
               </p>
             </li>
             <li>
-              <img src="/public/images/Home/vision.png" alt="" />
+              <img src="/images/Home/vision.png" alt="" />
             </li>
           </ul>
 
@@ -167,7 +167,7 @@
               </p>
             </li>
             <li>
-              <img src="/public/images/Home/value.png" alt="" />
+              <img src="/images/Home/value.png" alt="" />
             </li>
           </ul>
         </section>
@@ -184,42 +184,42 @@
             <div class="swiper-container mySwiper coverflow_carousel">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="/public/images/Home/Gallery image 2.jpg" />
+                  <img src="/images/Home/Gallery image 2.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="/public/images/Home/Gallery image 3.jpg" />
+                  <img src="/images/Home/Gallery image 3.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="/public/images/Home/Gallery image 4.jpg" />
+                  <img src="/images/Home/Gallery image 4.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="/public/images/Home/Gallery image 5.jpg" />
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="/public/images/Home/Gallery image 2.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/public/images/Home/Gallery image 3.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/public/images/Home/Gallery image 4.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/public/images/Home/Gallery image 5.jpg" />
+                  <img src="/images/Home/Gallery image 5.jpg" />
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="/public/images/Home/Gallery image 2.jpg" />
+                  <img src="/images/Home/Gallery image 2.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="/public/images/Home/Gallery image 3.jpg" />
+                  <img src="/images/Home/Gallery image 3.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="/public/images/Home/Gallery image 4.jpg" />
+                  <img src="/images/Home/Gallery image 4.jpg" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="/public/images/Home/Gallery image 5.jpg" />
+                  <img src="/images/Home/Gallery image 5.jpg" />
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="/images/Home/Gallery image 2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/Home/Gallery image 3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/Home/Gallery image 4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/Home/Gallery image 5.jpg" />
                 </div>
               </div>
             </div>
@@ -238,10 +238,7 @@
           </li>
           <li class="row align-items-center">
             <section class="col-md-6 leading_left">
-              <img
-                src="/public/images/Home/Leading from the front.jpg"
-                alt=""
-              />
+              <img src="/images/Home/Leading from the front.jpg" alt="" />
             </section>
             <section class="col-md-6 leading_right">
               <p>
@@ -266,13 +263,13 @@
         <section
           class="row justify-content-center align-items-center test2_row"
         >
-          <section class="border_test">
+          <section class="border_test mt-5">
             <ul class="testimonial2_card">
               <li>
-                <img src="/public/images/Home/test_profile.png" alt="" />
+                <img src="/images/Home/test_profile.png" alt="" />
               </li>
               <li>
-                <p class="paragraph">
+                <p class="paragraph px-2 px-md-4">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Uta enim ad minim veniam, quis nostrud exercitation ullamco
@@ -286,7 +283,7 @@
                     <p>MD, Godrej Industries</p>
                   </section>
                   <section>
-                    <img src="/public/images/Home/star.png" alt="" />
+                    <img src="/images/Home/star.png" alt="" />
                   </section>
                 </section>
               </li>
@@ -294,12 +291,12 @@
               <li>
                 <img
                   class="red_comma"
-                  src="/public/images/Home/red_comma.png"
+                  src="/images/Home/red_comma.png"
                   alt=""
                 />
                 <img
                   class="white_comma"
-                  src="/public/images/Home/white_comma.png"
+                  src="/images/Home/white_comma.png"
                   alt=""
                 />
               </li>
@@ -313,4 +310,20 @@
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script type="module" src="/main.js"></script>
+  <script>
+    async function fetchArticle() {
+      try {
+        const response = await fetch(
+          `http://localhost:5173/admin/index.html#/collections/home`
+        );
+        const data = await response.json();
+
+        console.log(data);
+      } catch (error) {
+        console.error("Error fetching article:", error);
+      }
+    }
+
+    fetchArticle();
+  </script>
 </html>
