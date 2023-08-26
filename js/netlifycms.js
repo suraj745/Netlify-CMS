@@ -13,7 +13,7 @@ CMS.init({
       {
         name: "home",
         label: "Home Page",
-        folder: "Home/home-banner",
+        folder: "/markdown/Home/Home_Banner",
         create: true,
         fields: [
           { name: "heading", label: "heading", widget: "string" },

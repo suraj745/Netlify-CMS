@@ -1,7 +1,12 @@
-export default {
+import { defineConfig } from "vite";
+import mdx from "@mdx-js/rollup";
+import { vitePluginMdxToHTML } from "vite-plugin-mdx-to-html";
+
+export default defineConfig({
   optimizeDeps: {
     include: ["jquery"],
   },
+  plugins: [mdx(), vitePluginMdxToHTML()],
   build: {
     rollupOptions: {
       input: {
@@ -13,8 +18,7 @@ export default {
         galleryPage: "/pages/gallery.html",
         leadershipPage: "/pages/leadership.html",
         mediaPage: "/pages/media_coverage.html",
-        adminPage: "/public/admin/index.html",
       },
     },
   },
-};
+});
