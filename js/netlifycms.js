@@ -5,10 +5,10 @@ CMS.init({
     backend: {
       name: "github",
       repo: "suraj745/Netlify-CMS",
-      branch: "master",
+      branch: "main",
     },
-    media_folder: "/public/images",
-    public_folder: "/public",
+    media_folder: "/dist/images",
+    public_folder: "/dist/public",
     collections: [
       {
         name: "home",
